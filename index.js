@@ -9,6 +9,12 @@ let createEmployeeRecord = function(row) {
     timeOutEvents:[]
   }
 }
+
+let createEmployeeRecords = function(employeeRowData) {
+  return employeeRowData.map(function(row){
+    return createEmployeeRecord(row)
+  })
+}
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
